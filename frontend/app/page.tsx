@@ -1,5 +1,6 @@
 
 "use client"
+import Link from "next/link";
 import React, { useState } from "react";
 
 const PlaneIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -137,7 +138,7 @@ export default function TravelHomepage() {
 
               {/* Quick links */}
               <div className="mt-4 flex flex-wrap items-center gap-3 text-sm">
-                <a href="/trips" className="text-blue-700 hover:underline">My trips</a>
+                <Link href="/trips" className="text-blue-700 hover:underline">My trips</Link>
                 <span className="text-gray-300">•</span>
                 <a href="/globe" className="text-blue-700 hover:underline">Globe</a>
                 <span className="text-gray-300">•</span>
@@ -249,7 +250,7 @@ export default function TravelHomepage() {
         <div className="rounded-2xl border bg-gradient-to-br from-blue-600 to-blue-500 p-8 sm:p-10 text-white text-center shadow-sm">
           <h3 className="text-2xl sm:text-3xl font-bold">Create Your First Trip Today</h3>
           <p className="opacity-90 mt-2">Free · No credit card required</p>
-          <a href="/trips" className="inline-flex items-center justify-center bg-white text-blue-700 font-semibold px-6 py-3 rounded-xl mt-6 hover:bg-blue-100 duration-300">Go to My Trips</a>
+          <Link href="/trips" className="inline-flex items-center justify-center bg-white text-blue-700 font-semibold px-6 py-3 rounded-xl mt-6 hover:bg-blue-100 duration-300">Go to My Trips</Link>
         </div>
       </Section>
 
