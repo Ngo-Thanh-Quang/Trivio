@@ -27,7 +27,7 @@ const Section: React.FC<{ id?: string; title: string; caption?: string; children
 
 // Card for destinations / itineraries
 const Card: React.FC<{ title: string; subtitle?: string; img?: string; href?: string }>= ({ title, subtitle, img, href }) => (
-  <a href={href || "#"} className="group rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-blue-400">
+  <Link href={href || "#"} className="group rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-white hover:shadow-md transition-shadow focus:outline-none focus:ring-2 focus:ring-blue-400">
     <div className="aspect-[4/3] w-full bg-gray-100 overflow-hidden rounded-xl">
       {img ? (
         // eslint-disable-next-line @next/next/no-img-element
@@ -40,7 +40,7 @@ const Card: React.FC<{ title: string; subtitle?: string; img?: string; href?: st
       <h4 className="font-semibold text-lg">{title}</h4>
       {subtitle && <p className="text-sm text-gray-600 mt-1">{subtitle}</p>}
     </div>
-  </a>
+  </Link>
 );
 
 // Simple testimonial bubble
