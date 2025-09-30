@@ -140,9 +140,9 @@ export default function TravelHomepage() {
               <div className="mt-4 flex flex-wrap items-center gap-3 text-sm">
                 <Link href="/trips" className="text-blue-700 hover:underline">My trips</Link>
                 <span className="text-gray-300">•</span>
-                <a href="/globe" className="text-blue-700 hover:underline">Globe</a>
+                <Link href="/globe" className="text-blue-700 hover:underline">Globe</Link>
                 <span className="text-gray-300">•</span>
-                <a href="#ai" className="text-blue-700 hover:underline">AI Planner</a>
+                <Link href="#ai" className="text-blue-700 hover:underline">AI Planner</Link>
               </div>
             </div>
 
@@ -212,10 +212,10 @@ export default function TravelHomepage() {
               <li>• Day 3: Hoi An Ancient Town – Lantern releasing</li>
               <li>• Day 4: My Khe Beach – Sunset coffee</li>
             </ul>
-            <a href="/plan/sample" className="mt-4 inline-flex items-center gap-2 text-blue-700 hover:underline">
+            <Link href="/plan/sample" className="mt-4 inline-flex items-center gap-2 text-blue-700 hover:underline">
               View Sample Itinerary
               <span aria-hidden>→</span>
-            </a>
+            </Link>
           </div>
         </div>
       </Section>
@@ -231,7 +231,7 @@ export default function TravelHomepage() {
               <h3 className="font-semibold text-lg">Find Your Destination</h3>
               <p className="text-gray-600 mt-2">Filter by flight time, estimated cost, crowd level, and favorite activities.</p>
             </div>
-            <a href="/globe" className="mt-4 inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-3 rounded-xl">Open Globe</a>
+            <Link href="/globe" className="mt-4 inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-3 rounded-xl">Open Globe</Link>
           </div>
         </div>
       </Section>
@@ -258,9 +258,9 @@ export default function TravelHomepage() {
         <div className="flex flex-wrap items-center justify-between gap-4">
           <p>© {new Date().getFullYear()} Trivio – Plan less. Travel more.</p>
           <nav className="flex gap-4">
-            <a href="/privacy" className="hover:underline">Privacy</a>
-            <a href="/terms" className="hover:underline">Terms</a>
-            <a href="/contact" className="hover:underline">Contact</a>
+            <Link href="/privacy" className="hover:underline">Privacy</Link>
+            <Link href="/terms" className="hover:underline">Terms</Link>
+            <Link href="/contact" className="hover:underline">Contact</Link>
           </nav>
         </div>
       </footer>
